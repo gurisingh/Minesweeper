@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minesweeper", "Minesweeper\Minesweeper.csproj", "{F999C2F8-6135-4931-A786-FA8FAB0655E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minesweeper", "src\Minesweeper\Minesweeper.csproj", "{F999C2F8-6135-4931-A786-FA8FAB0655E6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D8F580CF-02CB-4E06-90BA-FF1BAF73C519}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{30D66F61-77FD-4A54-9FB3-93A930E493D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{35340C31-FC6B-401F-8C5E-FCB4C317BD8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{35340C31-FC6B-401F-8C5E-FCB4C317BD8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{D6377CE1-A377-4B2B-BF1F-20C7B44FE554}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\Application.csproj", "{D6377CE1-A377-4B2B-BF1F-20C7B44FE554}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.UnitTests", "Application.UnitTests\Application.UnitTests.csproj", "{BDECE459-627C-491F-B18E-F12FECE38FA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.UnitTests", "tests\Application.UnitTests\Application.UnitTests.csproj", "{BDECE459-627C-491F-B18E-F12FECE38FA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

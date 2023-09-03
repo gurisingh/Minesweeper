@@ -14,7 +14,6 @@ namespace Application.UnitTests
             var gameBoard = new GameBoard();
             var playerService = new PlayerService();
 
-            // Set a mine at the new position (1, 0) to simulate hitting a mine
             gameBoard.Mines[0, 1] = true;
 
             // Act
@@ -36,7 +35,7 @@ namespace Application.UnitTests
             playerService.Move(Direction.Right, gameBoard, player);
 
             // Assert
-            Assert.Equal(1, player.Moves); // Check that moves increased
+            Assert.Equal(1, player.Moves);
         }
 
         [Fact]
@@ -51,7 +50,7 @@ namespace Application.UnitTests
             playerService.Move(Direction.Right, gameBoard, player);
 
             // Assert
-            Assert.Equal(3, player.Lives); // Check that lives remained the same
+            Assert.Equal(3, player.Lives);
         }
 
         [Fact]
@@ -66,7 +65,7 @@ namespace Application.UnitTests
             playerService.Move(Direction.Left, gameBoard, player);
 
             // Assert
-            Assert.Equal(0, player.Moves); // Check that moves remained the same
+            Assert.Equal(0, player.Moves);
         }
 
         [Fact]
@@ -81,7 +80,7 @@ namespace Application.UnitTests
             playerService.Move(Direction.Left, gameBoard, player);
 
             // Assert
-            Assert.Equal(3, player.Lives); // Check that lives remained the same
+            Assert.Equal(3, player.Lives);
         }
 
         [Fact]
@@ -96,7 +95,7 @@ namespace Application.UnitTests
             playerService.Move(Direction.Up, gameBoard, player);
 
             // Assert
-            Assert.Equal(0, player.Moves); // Check that moves remained the same
+            Assert.Equal(0, player.Moves);
         }
 
         [Fact]
@@ -107,11 +106,11 @@ namespace Application.UnitTests
             var gameBoard = new GameBoard();
             var playerService = new PlayerService();
 
-            // Act (Move to a valid empty cell)
+            // Act
             playerService.Move(Direction.Right, gameBoard, player);
 
             // Assert
-            Assert.Equal(3, player.Lives); // Check that lives remained the same
+            Assert.Equal(3, player.Lives);
         }
 
         [Fact]
@@ -122,11 +121,11 @@ namespace Application.UnitTests
             var gameBoard = new GameBoard();
             var playerService = new PlayerService();
 
-            // Act (Move to a valid empty cell)
+            // Act
             playerService.Move(Direction.Right, gameBoard, player);
 
             // Assert
-            Assert.Equal(1, player.Moves); // Check that moves increased
+            Assert.Equal(1, player.Moves);
         }
     }
 }
